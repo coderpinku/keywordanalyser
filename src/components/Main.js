@@ -66,11 +66,11 @@ const [showdata, setShowData] = useState(false);
         </ul>
       </div>
 
-      <div className='flex justify-center items-center mt-4 max-md:flex-wrap'>
+      <div className='flex justify-center items-center mt-4 max-md:flex-wrap max-md:px-4'>
 
         <div className='flex max-md:flex-[1_1_20rem]'>
-          <div className='h-[2.3rem] pt-1 border-[#495057] border-[1px] border-r-[0px] rounded-l-full text-[#495057] '>
-            <span className='cursor-pointer pl-2 pr-1'>All <AiFillCaretDown className='inline' /></span>
+          <div className='h-[2.3rem] max-md:w-[4rem] pt-1 border-[#495057] border-[1px] border-r-[0px] rounded-l-full text-[#495057]'>
+            <span className='cursor-pointer pl-2 pr-1 max-md:pr-0'>All<AiFillCaretDown className='inline ml-2' /></span>
          </div>
           <input type="text" placeholder='type a keyword and press enter' className='max-md:flex-[1_1_20rem] h-[2.3rem] border-[#495057] border-[1px] border-r-[0px] px-2 focus:outline-none focus:border-[#6610f2] max-md:border-r-[1px] max-md:rounded-r-full' />
     </div>
