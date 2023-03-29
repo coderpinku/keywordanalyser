@@ -39,11 +39,11 @@ const Navbar = () => {
         
         <nav className='flex justify-between items-center p-4 border-b-[1.5px]'>
             <div>
-                <h1 className='text-3xl font-bold text-[#495057]'>Keyword Analyser</h1>
+                <h1 className='text-3xl font-bold'>Keyword Analyser</h1>
             </div>
             <div className='max-md:hidden'>
-                <ul className='flex gap-6'>
-                    <li onClick={toggleMenu} className='cursor-pointer' >
+                <ul className='flex gap-6 text-[#495057]'>
+                    <li onClick={toggleMenu} className='cursor-pointer hover:text-black' >
 
                         Find Keywords <AiFillCaretDown className='inline' />
 
@@ -114,7 +114,7 @@ const Navbar = () => {
                         </ul>
                     </li>
 
-                    <li onClick={toggleMenu2}>
+                    <li onClick={toggleMenu2} className='cursor-pointer hover:text-black'>
                         Check Search Volume <AiFillCaretDown className='inline' />
                         <ul className=' absolute w-40 h-60 border-2 pt-2 top-14 rounded-md shadow bg-white' style={{ display: show1 ? "block" : "none" }}>
                             <li className='bg-[#6610f2] text-white  w-27 pl-[20px] py-1 font-semibold'>
@@ -182,7 +182,7 @@ const Navbar = () => {
                             </li>
                         </ul>
                     </li>
-                    <li onClick={toggleMenu3}>
+                    <li onClick={toggleMenu3} className='cursor-pointer hover:text-black'>
                         Keyword tool <AiFillCaretDown className='inline' />
                         <ul class="absolute w-[15rem] h-48  border-2 py-2 ml-4 mt-3 flex flex-col gap-1 rounded-md shadow bg-white" style={{ display: show2 ? "flex" : "none" }}>
                             <li className='w-full pl-4 hover:text-white hover:bg-[#6610f2]'>
@@ -205,7 +205,7 @@ const Navbar = () => {
                             </li>
                         </ul>
                     </li>
-                    <li onClick={toggleMenu4}>
+                    <li onClick={toggleMenu4} className='cursor-pointer hover:text-black'>
                         API Access <AiFillCaretDown className='inline' />
                         <ul class="absolute w-[12rem] h-20  border-2 py-2 ml-4 mt-3 flex flex-col gap-1 rounded-md shadow bg-white" style={{ display: show3 ? "block" : "none" }}>
                             <li className='w-full pl-4 hover:text-white hover:bg-[#6610f2]'>
@@ -220,9 +220,9 @@ const Navbar = () => {
             </div>
             <div className='max-md:hidden'>
                 <ul className='flex gap-6 '>
-                    <li><a href='#' className='text-[#6610f2]'><BsFillEnvelopeHeartFill className='inline mb-1' /> Contact</a></li>
-                    <li><a href='#' className='text-[#6610f2]'><BsFillCartDashFill className='inline mb-1' /> Keyword</a></li>
-                    <li><a href='#' className='bg-[#6610f2] px-4 py-2 rounded-full text-white'><BsFillPeopleFill className='inline mb-1' /> Login</a></li>
+                    <li><a href='#' className='text-[#6610f2] hover:contrast-200'><BsFillEnvelopeHeartFill className='inline mb-1' /> Contact</a></li>
+                    <li><a href='#' className='text-[#6610f2] hover:contrast-200'><BsFillCartDashFill className='inline mb-1' /> Keyword</a></li>
+                    <li><a href='#' className='bg-[#6610f2] hover:contrast-200 px-4 py-2 rounded-full text-white'><BsFillPeopleFill className='inline mb-1' /> Login</a></li>
                 </ul>
             </div>
             <div className='hidden max-md:block' onClick={() => setMenuBar(!menuBar)}>
@@ -235,7 +235,7 @@ const Navbar = () => {
                 }
             </div>
                 </nav>
-            <div className={menuBar ? 'flex flex-col top-0 left-0 bg-slate-400 h-screen w-[80%] absolute p-4 border-[1.5px] ease-in-out duration-500' : 'ease-in-out duration-500 fixed left-[-100%]'}>
+            <div className={menuBar ? 'flex flex-col top-0 left-0 bg-white h-screen w-[80%] absolute p-4 border-[1.5px] ease-in-out duration-500' : 'ease-in-out duration-500 fixed left-[-100%]'}>
             <div>
                 <h1 className='text-2xl font-bold'>Keyword Analyser</h1>
             </div>
